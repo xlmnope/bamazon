@@ -24,7 +24,7 @@ connection.connect(function(err) {
 });
 
 function showitems(){
-    connection.query("SELECT product_name, price, item_id FROM products WHERE stock_quantity>0;", function(err, res) {
+    connection.query("SELECT product_name, price, item_id, department_name FROM products WHERE stock_quantity>0;", function(err, res) {
       if (err) throw err;
       for (var i = 0; i < res.length; i++) {
         availableproducts.push(res[i].product_name);
@@ -32,6 +32,8 @@ function showitems(){
           i+1 + ".)  " +
             "Product Name: " +
             res[i].product_name +"\n" +
+            " ||  Category: " +
+            res[i].department_name + "\n"+
             " ||  Price: " +
             res[i].price + "\n" //+
             //" ||  ID: "  +
@@ -60,7 +62,6 @@ function checkStock(answer){
   connection.query(query, { product_name: answer.nameofProduct }, function(err, res) {
     if (err) throw err;
     var price = res[0].price;
-    console.log(res[0].stock_quantity);
     if (res[0].stock_quantity > 0) {
         promptuserAmount(res[0].stock_quantity, price, productname);
     }
@@ -76,8 +77,7 @@ function promptuserAmount(itemamount, price, productname){
 }
 
 function handleAmount(answer, itemamount, price, productname){
-  console.log("handleAmount click handler");
-  console.log("price: "+price);
+  console.log("Price: "+price);
 if (answer.amountPurchase > itemamount) {
   console.log("sorry, we don't have enough of that item. We have " + itemamount + " of that item.");
   promptuserAmount(productname);

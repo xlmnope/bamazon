@@ -6,7 +6,7 @@ The user is shown a list of items for sale, is able to select the item and quani
 
 ---
 ## Demo
-![Word Guess Cli](/HangmanCLI.gif)
+![Bamazon CLI](/bamazon.webm)
 ---
 ### Why did I make this?: 
 * This was an assignment for UCSD's Full Stack Bootcamp. Building this application allowed me to practice reading and updating data to a mySQL database. 
