@@ -14,11 +14,11 @@ The manager is shown a list of menu options and is able to add new items for sal
 ![Bamazon CLI Manager](/bamazon_manager.gif)
 ---
 ### Why did I make this?: 
-* This was an assignment for UCSD's Full Stack Bootcamp. Building this application allowed me to practice reading and updating data to a mySQL database. 
+* This was an assignment for UCSD's Full Stack Bootcamp. Building this application allowed me to practice creating, reading, and updating updating data to a mySQL database. 
 
 
 ### How to use this application:
-* To interact with this application, clone the repo to your computer. In your terminal, navigate to the project folder . Type "node bamazon_customer.js" into the command line. 
+* To interact with this application, clone the repo to your computer. In your terminal, navigate to the project folder. To use the customer view, type "node bamazon_customer.js" into the command line. For manager view, navigate to the bamazon_manager folder, and then type "node bamazon_manager.js". 
 * The terminal will then show you a list of items available for purchase. Use the arrow keys to select an item to purchase. 
 
 
