@@ -13,7 +13,7 @@ The user is shown a list of items for sale, is able to select the item and quani
 
 
 ### How to use this application:
-* To interact with this application, clone the repo to your computer. In your terminal, navigate to the project folder . Type "node bamazon_Customer.js" into the command line. 
+* To interact with this application, clone the repo to your computer. In your terminal, navigate to the project folder . Type "node bamazon_customer.js" into the command line. 
 * The terminal will then show you a list of items available for purchase. Use the arrow keys to select an item to purchase. 
 
 
